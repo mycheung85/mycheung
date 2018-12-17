@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Boogaloo|Carter+One|Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=B612+Mono|Exo+2:500|Staatliches');
+
+font-family: 'Staatliches', cursive;
+font-family: 'B612 Mono', monospace;
+font-family: 'Exo 2', sans-serif;
 
 *{
   box-sizing: border-box;
@@ -9,50 +14,74 @@
   height: 100vh;
   width: 100%;
   background-color: whitesmoke;
-  align-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  position: relative;
   overflow: hidden;
-  align-content: space-around
 }
 
 .site-header {
-  display: flex;
-  width: 100%;
-  height: 40%;
-  flex-direction: column;
-  align-items: center
+  width: 80%;
 }
 
 .site-header h1 {
-  font-family: 'Boogaloo';
+  text-align: center;
+  font-family: 'B612 Mono', monospace;
   color: chocolate;
-  font-size: 120px;
+  font-size: 100px;
+  padding: 0%;
+  margin: 50px 0px;
 }
 
 .profile-bar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   color:red;
   font-size: 50px;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   text-align: center;
-  padding:15px;
-  font-family: 'Carter+one'
+  padding: 20px;
+  font-family: 'Carter+one';
+  justify-content: space-around;
+}
+
+.profile-bar-box {
+  justify-content: space-between;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px whitesmoke;
+  padding: 15px 40px;
+  background: red;
+
+}
+
+.profile-bar-box:hover, .profile-bar-box:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .social-media ul {
   display: flex;
-  flex-direction: row;
+  list-style-type: none;
+  font-size: 40px;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
   justify-content: space-around;
+ 
 }
 
-
+.social-media a {
+  padding: 50px;
+  margin: 10%;
+  text-decoration: none;
+}
 
 .site-container {
   display: flex;
   width: 100%;
-  float: none;
-  
+  justify-content: center;
 }
+
