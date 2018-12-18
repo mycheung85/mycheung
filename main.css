@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Boogaloo|Carter+One|Rock+Salt');
 @import url('https://fonts.googleapis.com/css?family=B612+Mono|Exo+2:500|Staatliches');
 
-font-family: 'Staatliches', cursive;
+/* font-family: 'Staatliches', cursive;
 font-family: 'B612 Mono', monospace;
-font-family: 'Exo 2', sans-serif;
+font-family: 'Exo 2', sans-serif; */
+
 
 *{
   box-sizing: border-box;
@@ -11,12 +12,14 @@ font-family: 'Exo 2', sans-serif;
 
 .parent-portfolio{
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: whitesmoke;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow: scroll;
+  background-image: url('images/Free-Chalkboard-Backgrounds.jpg');
+  
 }
 
 .site-header {
@@ -26,62 +29,158 @@ font-family: 'Exo 2', sans-serif;
 .site-header h1 {
   text-align: center;
   font-family: 'B612 Mono', monospace;
-  color: chocolate;
+  /* color: rgb(243, 235, 235); */
+  color: whitesmoke;
   font-size: 100px;
   padding: 0%;
   margin: 50px 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .profile-bar {
   display: flex;
-  color:red;
   font-size: 50px;
   font-family: 'Exo 2', sans-serif;
   text-align: center;
   padding: 20px;
   font-family: 'Carter+one';
   justify-content: space-around;
+
 }
 
 .profile-bar-box {
   justify-content: space-between;
   font-family: 'Exo 2', sans-serif;
-  color: white;
+  color: black;
   text-shadow: 1px 1px 2px whitesmoke;
   padding: 15px 40px;
   background: red;
+  transform: rotate(-6deg);
+  border-radius: 3px;
+  background: radial-gradient( rgb(220, 40,40), whitesmoke);
+}
 
+.profile-bar-box:nth-child(2n) {
+  justify-content: space-between;
+  font-family: 'Exo 2', sans-serif;
+  color: black;
+  text-shadow: 2px 2px 3px whitesmoke;
+  padding: 15px 50px;
+  transform: rotate(6deg);
+  border-radius: 3px;
+  background: radial-gradient(rgb(220, 40,40), whitesmoke);
 }
 
 .profile-bar-box:hover, .profile-bar-box:focus{
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgb(243, 235, 235);
+  background: red;
+  color: beige;
+  transform: rotate(10deg);
 }
 
-.social-media {
+.profile-bar-box:nth-child(2):hover, .profile-bar-box:nth-child(2):focus{
+  transform: rotate(-30deg);
+}
+
+.social-media { 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+  padding: 80px 20px 20px;
+
 }
 
-.social-media ul {
-  display: flex;
+.social-media span{
+  display: inline;
   list-style-type: none;
+  padding: 15px 40px;
+  transform: rotate(6deg);
+  border-radius: 3px;
+  background: radial-gradient(rgb(220, 40,40), whitesmoke);
+}
+
+.social-media span:nth-child(2){
+  display: inline;
+  list-style-type: none;
+  padding: 15px 40px;
+  transform: rotate(-6deg);
+  border-radius: 3px;
+  background: radial-gradient(rgb(220, 40,40), whitesmoke);
+}
+
+a {
+  text-decoration: none;
   font-size: 40px;
   font-family: 'Exo 2', sans-serif;
-  text-align: center;
-  justify-content: space-around;
- 
+  color: black;
+  text-shadow: 2px 2px 3px whitesmoke;
 }
 
-.social-media a {
-  padding: 50px;
-  margin: 10%;
+.social-media span:hover, .social-media span:focus{
   text-decoration: none;
+  color: red;
+  background: whitesmoke;
+  box-shadow:10px 10px 7px red;
+  transform: rotate(10deg);
+} 
+
+/* .social-media span a:hover:nth-child(even), .social-media span a:nth-child(even):focus{
+  color: red;
+  transform: rotate(-90deg);
+}  */
+
+.social-media span:nth-child(odd):hover, .social-media span:nth-child(odd):focus {
+  transform: rotate(-20deg);
 }
 
-.site-container {
-  display: flex;
-  width: 100%;
+.site-container{
+  display: flex; 
+  align-content: center;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  margin: 1rem;
+  padding: 20px;
+  margin-top: 100px; 
 }
+
+.project {
+  justify-content: space-around;
+  background-color: white;  
+  border: 30px 30px solid white;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  margin-right: 100px; 
+
+}
+
+.project img {
+  outline: 1px solid black;
+}
+
+
+.project p {
+  font-family: 'Exo 2', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+} 
+
+.project:hover, .project:focus {
+  box-shadow:30px 30px 30px rgb(243, 235, 235);
+  transform: rotate(6deg);
+
+}
+
 
