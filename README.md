@@ -1,5 +1,7 @@
 # Welcome to my Portfolio
 
+https://mycheung85.github.io/mycheung/
+
 A landing page showcasing my developer skills in HTML, CSS, Node and React. Below are few repo's that are not on the landing page.
 
 ** A weather landing page connected to a weather API that shows the weather in Manchester;
